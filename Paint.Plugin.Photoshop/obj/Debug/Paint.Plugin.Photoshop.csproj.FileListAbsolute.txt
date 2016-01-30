@@ -1,0 +1,5 @@
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Plugin.Photoshop.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Plugin.Photoshop.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.csprojResolveAssemblyReference.cache

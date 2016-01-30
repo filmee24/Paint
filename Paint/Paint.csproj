@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paint</RootNamespace>
+    <AssemblyName>Paint</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1454177583_Untitled-2-07.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.2.728.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushAirbrush-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushBlend-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushBucketFill-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushClone-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushConvolve-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushDodgeBurn-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushEraser-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushHeal-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushInk-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushPaintbrush-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushPencil-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushPerspectiveClone-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-BrushSmudge-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourBrightnessContrast-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourColourBalance-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourColourize-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourCurves-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourDesaturate-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourLevels-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourPickerTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourPosterize-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-ColourThreshold-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-GEGLOperationTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-MagnifyTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-MeasureTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-PathTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionByColor-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionEllipse-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionForeground-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionLasso-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionRectangle-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionScissors-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-SelectionWand-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TextTool-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformAlign-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformCrop-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformFlip-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformMove-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformPerspective-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformRotate-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformScale-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIMP-Toolbox-TransformShear-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Paint.Core\Paint.Core.csproj">
+      <Project>{247028D0-DADC-4861-84BA-5AE74955B791}</Project>
+      <Name>Paint.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standardcolors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1454177583_Untitled-2-07.ico" />
+    <None Include="Resources\switchcolors.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

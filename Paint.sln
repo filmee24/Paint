@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint", "Paint\Paint.csproj", "{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint.Core", "Paint.Core\Paint.Core.csproj", "{247028D0-DADC-4861-84BA-5AE74955B791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{CB3D7A94-3C89-4A0A-9586-AAAFBA2D6918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint.Plugin.Photoshop", "Paint.Plugin.Photoshop\Paint.Plugin.Photoshop.csproj", "{518117D3-43CA-42BA-A575-DE2984D9376F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26B13640-EEC4-4DDB-B239-9E97CF7879E8}"
+	ProjectSection(SolutionItems) = preProject
+		ToDo.txt = ToDo.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5D4DE1-889A-4767-A4F7-4FF5C767AE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247028D0-DADC-4861-84BA-5AE74955B791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247028D0-DADC-4861-84BA-5AE74955B791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247028D0-DADC-4861-84BA-5AE74955B791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247028D0-DADC-4861-84BA-5AE74955B791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518117D3-43CA-42BA-A575-DE2984D9376F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518117D3-43CA-42BA-A575-DE2984D9376F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518117D3-43CA-42BA-A575-DE2984D9376F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518117D3-43CA-42BA-A575-DE2984D9376F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{518117D3-43CA-42BA-A575-DE2984D9376F} = {CB3D7A94-3C89-4A0A-9586-AAAFBA2D6918}
+	EndGlobalSection
+EndGlobal

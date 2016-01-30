@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GIMP_Toolbox_TransformMove_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformMove-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushAirbrush_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushAirbrush-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionRectangle_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionRectangle-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushBlend_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushBlend-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_PathTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-PathTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushSmudge_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushSmudge-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushClone_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushClone-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformFlip_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformFlip-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionScissors_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionScissors-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushHeal_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushHeal-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionLasso_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionLasso-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformRotate_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformRotate-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourThreshold_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourThreshold-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourLevels_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourLevels-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushPencil_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushPencil-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushConvolve_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushConvolve-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_MeasureTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-MeasureTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushPerspectiveClone_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushPerspectiveClone-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourCurves_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourCurves-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_GEGLOperationTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-GEGLOperationTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushDodgeBurn_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushDodgeBurn-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushPaintbrush_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushPaintbrush-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformAlign_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformAlign-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionForeground_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionForeground-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardcolors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardcolors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushInk_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushInk-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourPosterize_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourPosterize-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionByColor_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionByColor-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_MagnifyTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-MagnifyTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushBucketFill_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushBucketFill-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionEllipse_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionEllipse-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourBrightnessContrast_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourBrightnessContrast-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformPerspective_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformPerspective-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformScale_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformScale-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformShear_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformShear-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourDesaturate_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourDesaturate-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TextTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TextTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_BrushEraser_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-BrushEraser-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourPickerTool_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourPickerTool-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_TransformCrop_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-TransformCrop-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourColourize_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourColourize-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_ColourColourBalance_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-ColourColourBalance-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIMP_Toolbox_SelectionWand_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIMP-Toolbox-SelectionWand-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switchcolors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switchcolors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

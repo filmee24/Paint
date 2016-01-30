@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{247028D0-DADC-4861-84BA-5AE74955B791}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paint.Core</RootNamespace>
+    <AssemblyName>Paint.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AupheliaRun Launcher\AupheliaRun Launcher\bin\Debug\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Paint\bin\Debug\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AupheliaRun Launcher\AupheliaRun Launcher\bin\Debug\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AupheliaRun Launcher\AupheliaRun Launcher\bin\Debug\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCompleteMenu\AutocompleteItem.cs" />
+    <Compile Include="AutoCompleteMenu\AutocompleteItems.cs" />
+    <Compile Include="AutoCompleteMenu\AutocompleteListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteMenu\AutocompleteMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteMenu\AutocompleteMenuHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteMenu\EventArgs.cs" />
+    <Compile Include="AutoCompleteMenu\IAutocompleteListView.cs" />
+    <Compile Include="AutoCompleteMenu\ITextBoxWrapper.cs" />
+    <Compile Include="AutoCompleteMenu\Range.cs" />
+    <Compile Include="AutoCompleteMenu\TextBoxWrapper.cs" />
+    <Compile Include="CommandlineArguments.cs" />
+    <Compile Include="DialogBuilder.cs" />
+    <Compile Include="EnumButtonGroup\EnumButtonGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnumButtonGroup\EnumButtonGroup.designer.cs">
+      <DependentUpon>EnumButtonGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumButtonGroup\EnumButtonGroupSelectedValueEditor.cs" />
+    <Compile Include="EnumButtonGroup\StringToTypeConverter.cs" />
+    <Compile Include="ExpandoObjectHelper.cs" />
+    <Compile Include="Plugins\ApplicationPlugIn.cs" />
+    <Compile Include="Plugins\Helper.cs" />
+    <Compile Include="Plugins\IApplicationPlugIn.cs" />
+    <Compile Include="Plugins\IPluggable.cs" />
+    <Compile Include="Plugins\IPlugIn.cs" />
+    <Compile Include="Plugins\IPlugInApplication.cs" />
+    <Compile Include="Plugins\IPlugInBasedApplication.cs" />
+    <Compile Include="Plugins\LinkFinder.cs" />
+    <Compile Include="Plugins\LinkItem.cs" />
+    <Compile Include="Plugins\PlugIn.cs" />
+    <Compile Include="Plugins\PlugInApplication.cs" />
+    <Compile Include="Plugins\PlugInApplicationAttribute.cs" />
+    <Compile Include="Plugins\PlugInAttribute.cs" />
+    <Compile Include="Plugins\PlugInBasedApplication.cs" />
+    <Compile Include="Plugins\Runnable\IRunnable.cs" />
+    <Compile Include="Plugins\Runnable\IRunnablePlugIn.cs" />
+    <Compile Include="Plugins\Runnable\RunnablePlugIn.cs" />
+    <Compile Include="Plugins\Runnable\RunnablePlugInBasedApplication.cs" />
+    <Compile Include="Database\Api\CascadeDeleteAttribute.cs" />
+    <Compile Include="Database\Api\IDatabaseId.cs" />
+    <Compile Include="Database\Api\IExternalOID.cs" />
+    <Compile Include="Database\Api\IIndexManager.cs" />
+    <Compile Include="Database\Api\IObjectRepresentation.cs" />
+    <Compile Include="Database\Api\IObjectSet.cs" />
+    <Compile Include="Database\Api\IObjectValues.cs" />
+    <Compile Include="Database\Api\IOdb.cs" />
+    <Compile Include="Database\Api\IOdbComparable.cs" />
+    <Compile Include="Database\Api\IOdbExt.cs" />
+    <Compile Include="Database\Api\IOdbForTrigger.cs" />
+    <Compile Include="Database\Api\IRefactorManager.cs" />
+    <Compile Include="Database\Api\IValues.cs" />
+    <Compile Include="Database\Api\NonPersistentAttribute.cs" />
+    <Compile Include="Database\Api\OdbConfiguration.cs" />
+    <Compile Include="Database\Api\OID.cs" />
+    <Compile Include="Database\Api\OIDAttribute.cs" />
+    <Compile Include="Database\Api\OrderByConstants.cs" />
+    <Compile Include="Database\Api\Query\IConstraint.cs" />
+    <Compile Include="Database\Api\Query\ILinqQueryable.cs" />
+    <Compile Include="Database\Api\Query\ILinqQueryInternal.cs" />
+    <Compile Include="Database\Api\Query\IQuery.cs" />
+    <Compile Include="Database\Api\Query\IValuesQuery.cs" />
+    <Compile Include="Database\Api\Triggers\DeleteTrigger.cs" />
+    <Compile Include="Database\Api\Triggers\EnrichWithOidTrigger.cs" />
+    <Compile Include="Database\Api\Triggers\InsertTrigger.cs" />
+    <Compile Include="Database\Api\Triggers\ITriggerManager.cs" />
+    <Compile Include="Database\Api\Triggers\SelectTrigger.cs" />
+    <Compile Include="Database\Api\Triggers\Trigger.cs" />
+    <Compile Include="Database\Api\Triggers\UpdateTrigger.cs" />
+    <Compile Include="Database\Btree\AbstractBTree.cs" />
+    <Compile Include="Database\Btree\AbstractBTreeIterator.cs" />
+    <Compile Include="Database\Btree\AbstractBTreeNode.cs" />
+    <Compile Include="Database\Btree\BTreeIteratorMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\BTreeIteratorSingleValuePerKey.cs" />
+    <Compile Include="Database\Btree\BTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\BTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\BTreeNodeSingleValuePerKey.cs" />
+    <Compile Include="Database\Btree\BTreeSingleValuePerKey.cs" />
+    <Compile Include="Database\Btree\BTreeValidator.cs" />
+    <Compile Include="Database\Btree\IBTree.cs" />
+    <Compile Include="Database\Btree\IBTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\IBTreeNode.cs" />
+    <Compile Include="Database\Btree\IBTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\IBTreeNodeOneValuePerKey.cs" />
+    <Compile Include="Database\Btree\IBTreePersister.cs" />
+    <Compile Include="Database\Btree\IBTreeSingleValuePerKey.cs" />
+    <Compile Include="Database\Btree\IKeyAndValue.cs" />
+    <Compile Include="Database\Btree\InMemoryBTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\InMemoryBTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Database\Btree\InMemoryPersister.cs" />
+    <Compile Include="Database\Btree\IterarorAdapter.cs" />
+    <Compile Include="Database\Btree\KeyAndValue.cs" />
+    <Compile Include="Database\Btree\ODBBTreeMultiple.cs" />
+    <Compile Include="Database\Btree\ODBBTreeNodeMultiple.cs" />
+    <Compile Include="Database\Btree\ODBBTreeNodeSingle.cs" />
+    <Compile Include="Database\Btree\ODBBTreeSingle.cs" />
+    <Compile Include="Database\Cache\IOdbCache.cs" />
+    <Compile Include="Database\Cache\IReadObjectsCache.cs" />
+    <Compile Include="Database\Cache\OdbCache.cs" />
+    <Compile Include="Database\Cache\ReadObjectsCache.cs" />
+    <Compile Include="Database\Container\DependencyContainer.cs" />
+    <Compile Include="Database\Core\BTree\IndexManager.cs" />
+    <Compile Include="Database\Core\BTree\LazyODBBTreeIteratorMultiple.cs" />
+    <Compile Include="Database\Core\BTree\LazyODBBTreePersister.cs" />
+    <Compile Include="Database\Core\Engine\AbstractStorageEngineReader.cs" />
+    <Compile Include="Database\Core\Engine\ByteArrayConverter.cs" />
+    <Compile Include="Database\Core\Engine\FileSystemInterface.cs" />
+    <Compile Include="Database\Core\Engine\FileSystemReader.cs" />
+    <Compile Include="Database\Core\Engine\FileSystemWriter.cs" />
+    <Compile Include="Database\Core\Engine\IdManager.cs" />
+    <Compile Include="Database\Core\Engine\IFileSystemReader.cs" />
+    <Compile Include="Database\Core\Engine\INonNativeObjectWriter.cs" />
+    <Compile Include="Database\Core\Engine\InstanceBuilder.cs" />
+    <Compile Include="Database\Core\Engine\InternalTriggerManager.cs" />
+    <Compile Include="Database\Core\Engine\NonNativeObjectWriter.cs" />
+    <Compile Include="Database\Core\Engine\ObjectReader.cs" />
+    <Compile Include="Database\Core\Engine\ObjectWriter.cs" />
+    <Compile Include="Database\Core\Engine\PendingReading.cs" />
+    <Compile Include="Database\Core\Engine\StorageEngine.cs" />
+    <Compile Include="Database\Core\IFileSystemInterface.cs" />
+    <Compile Include="Database\Core\IFileSystemWriter.cs" />
+    <Compile Include="Database\Core\IInstanceBuilder.cs" />
+    <Compile Include="Database\Core\IInternalObjectSet.cs" />
+    <Compile Include="Database\Core\IInternalValues.cs" />
+    <Compile Include="Database\Core\IInternalValuesQuery.cs" />
+    <Compile Include="Database\Core\IMatchingObjectAction.cs" />
+    <Compile Include="Database\Core\IObjectReader.cs" />
+    <Compile Include="Database\Core\IObjectWriter.cs" />
+    <Compile Include="Database\Core\IQueryEngine.cs" />
+    <Compile Include="Database\Core\IStorageEngine.cs" />
+    <Compile Include="Database\Core\Query\AbstractQuery.cs" />
+    <Compile Include="Database\Core\Query\Criteria\AbstractExpression.cs" />
+    <Compile Include="Database\Core\Query\Criteria\And.cs" />
+    <Compile Include="Database\Core\Query\Criteria\ComparisonConstraint.cs" />
+    <Compile Include="Database\Core\Query\Criteria\ComposedExpression.cs" />
+    <Compile Include="Database\Core\Query\Criteria\CriteriaQueryExecutionPlan.cs" />
+    <Compile Include="Database\Core\Query\Criteria\CriteriaQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\Criteria\EmptyConstraint.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\AEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\CollectionSizeEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\ComparisonEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\ContainsEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\EndsWithEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\EqualsEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\IdentityEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\IEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\LikeEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Evaluations\StartsWithEvaluation.cs" />
+    <Compile Include="Database\Core\Query\Criteria\GenericQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\Criteria\IInternalConstraint.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Not.cs" />
+    <Compile Include="Database\Core\Query\Criteria\Or.cs" />
+    <Compile Include="Database\Core\Query\Criteria\QueryConstraint.cs" />
+    <Compile Include="Database\Core\Query\Criteria\QueryResultAction.cs" />
+    <Compile Include="Database\Core\Query\Criteria\SodaQuery.cs" />
+    <Compile Include="Database\Core\Query\Execution\IMultiClassQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\Execution\IQueryFieldAction.cs" />
+    <Compile Include="Database\Core\Query\Execution\MultiClassGenericQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\IInternalQuery.cs" />
+    <Compile Include="Database\Core\Query\IQueryExecutionPlan.cs" />
+    <Compile Include="Database\Core\Query\IQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\IQueryManager.cs" />
+    <Compile Include="Database\Core\Query\Linq\ExpressionQueryBuilder.cs" />
+    <Compile Include="Database\Core\Query\Linq\ExpressionTransformer.cs" />
+    <Compile Include="Database\Core\Query\Linq\ExpressionTreeNormalizer.cs" />
+    <Compile Include="Database\Core\Query\Linq\ExpressionVisitor.cs" />
+    <Compile Include="Database\Core\Query\Linq\LinqQuery.cs" />
+    <Compile Include="Database\Core\Query\Linq\LinqQueryable.cs" />
+    <Compile Include="Database\Core\Query\Linq\LinqQueryExtensions.cs" />
+    <Compile Include="Database\Core\Query\Linq\LinqQueryTranslator.cs" />
+    <Compile Include="Database\Core\Query\Linq\OptimizeableMethodConstrains.cs" />
+    <Compile Include="Database\Core\Query\Linq\OrderByAscendingClauseVisitor.cs" />
+    <Compile Include="Database\Core\Query\Linq\OrderByClauseVisitorBase.cs" />
+    <Compile Include="Database\Core\Query\Linq\OrderByDescendingClauseVisitor.cs" />
+    <Compile Include="Database\Core\Query\Linq\PlaceHolderQuery.cs" />
+    <Compile Include="Database\Core\Query\Linq\QueryBuilderContext.cs" />
+    <Compile Include="Database\Core\Query\Linq\QueryBuilderRecorder.cs" />
+    <Compile Include="Database\Core\Query\Linq\ReflectionMethodAnalyser.cs" />
+    <Compile Include="Database\Core\Query\Linq\SubtreeEvaluator.cs" />
+    <Compile Include="Database\Core\Query\Linq\TypeSystem.cs" />
+    <Compile Include="Database\Core\Query\Linq\UnoptimizedQuery.cs" />
+    <Compile Include="Database\Core\Query\Linq\WhereClauseVisitor.cs" />
+    <Compile Include="Database\Core\Query\List\AbstractBTreeCollection.cs" />
+    <Compile Include="Database\Core\Query\List\InMemoryBTreeCollection.cs" />
+    <Compile Include="Database\Core\Query\List\InMemoryBTreeCollectionForValues.cs" />
+    <Compile Include="Database\Core\Query\List\LazyBTreeCollection.cs" />
+    <Compile Include="Database\Core\Query\List\LazySimpleListFromOid.cs" />
+    <Compile Include="Database\Core\Query\List\LazySimpleListOfAOI.cs" />
+    <Compile Include="Database\Core\Query\List\ObjectValues.cs" />
+    <Compile Include="Database\Core\Query\List\SimpleList.cs" />
+    <Compile Include="Database\Core\Query\List\SimpleListForValues.cs" />
+    <Compile Include="Database\Core\Query\QueryManager.cs" />
+    <Compile Include="Database\Core\Query\Values\AbstractQueryFieldAction.cs" />
+    <Compile Include="Database\Core\Query\Values\AverageValueAction.cs" />
+    <Compile Include="Database\Core\Query\Values\CountAction.cs" />
+    <Compile Include="Database\Core\Query\Values\FieldValueAction.cs" />
+    <Compile Include="Database\Core\Query\Values\GroupByValuesQueryResultAction.cs" />
+    <Compile Include="Database\Core\Query\Values\MaxValueAction.cs" />
+    <Compile Include="Database\Core\Query\Values\MinValueAction.cs" />
+    <Compile Include="Database\Core\Query\Values\SizeAction.cs" />
+    <Compile Include="Database\Core\Query\Values\SublistAction.cs" />
+    <Compile Include="Database\Core\Query\Values\SumAction.cs" />
+    <Compile Include="Database\Core\Query\Values\ValuesCriteriaQuery.cs" />
+    <Compile Include="Database\Core\Query\Values\ValuesCriteriaQueryExecutor.cs" />
+    <Compile Include="Database\Core\Query\Values\ValuesQueryResultAction.cs" />
+    <Compile Include="Database\Core\Query\Values\ValuesUtil.cs" />
+    <Compile Include="Database\Core\RefactorManager.cs" />
+    <Compile Include="Database\Core\Session\ISession.cs" />
+    <Compile Include="Database\Core\Session\ITransaction.cs" />
+    <Compile Include="Database\Core\Session\SessionDataProvider.cs" />
+    <Compile Include="Database\Exceptions\BTreeError.cs" />
+    <Compile Include="Database\Exceptions\BTreeException.cs" />
+    <Compile Include="Database\Exceptions\BTreeNodeValidationException.cs" />
+    <Compile Include="Database\Exceptions\CorruptedDatabaseException.cs" />
+    <Compile Include="Database\Exceptions\DuplicatedKeyException.cs" />
+    <Compile Include="Database\Exceptions\ExceptionsHelper.cs" />
+    <Compile Include="Database\Exceptions\IError.cs" />
+    <Compile Include="Database\Exceptions\LinqQueryException.cs" />
+    <Compile Include="Database\Exceptions\NDatabaseError.cs" />
+    <Compile Include="Database\Exceptions\ODBRuntimeException.cs" />
+    <Compile Include="Database\ILogger.cs" />
+    <Compile Include="Database\Indexing\ComposedCompareKey.cs" />
+    <Compile Include="Database\Indexing\IndexTool.cs" />
+    <Compile Include="Database\Indexing\SimpleCompareKey.cs" />
+    <Compile Include="Database\IO\FileIdentification.cs" />
+    <Compile Include="Database\IO\IDbIdentification.cs" />
+    <Compile Include="Database\IO\IMultiBuffer.cs" />
+    <Compile Include="Database\IO\IMultiBufferedFileIO.cs" />
+    <Compile Include="Database\IO\InMemoryIdentification.cs" />
+    <Compile Include="Database\IO\INonBufferedFileIO.cs" />
+    <Compile Include="Database\IO\IOdbStream.cs" />
+    <Compile Include="Database\IO\MultiBuffer.cs" />
+    <Compile Include="Database\IO\MultiBufferedFileIO.cs" />
+    <Compile Include="Database\IO\NonBufferedFileIO.cs" />
+    <Compile Include="Database\IO\OdbDirectory.cs" />
+    <Compile Include="Database\IO\OdbFileManager.cs" />
+    <Compile Include="Database\IO\OdbFileStream.cs" />
+    <Compile Include="Database\IO\OdbMemoryStream.cs" />
+    <Compile Include="Database\Meta\AbstractObjectInfo.cs" />
+    <Compile Include="Database\Meta\ArrayObjectInfo.cs" />
+    <Compile Include="Database\Meta\AtomicNativeObjectInfo.cs" />
+    <Compile Include="Database\Meta\AttributesCache.cs" />
+    <Compile Include="Database\Meta\AttributeValuesMap.cs" />
+    <Compile Include="Database\Meta\CIZoneInfo.cs" />
+    <Compile Include="Database\Meta\ClassAttributeInfo.cs" />
+    <Compile Include="Database\Meta\ClassInfo.cs" />
+    <Compile Include="Database\Meta\ClassInfoCompareResult.cs" />
+    <Compile Include="Database\Meta\ClassInfoIndex.cs" />
+    <Compile Include="Database\Meta\ClassInfoList.cs" />
+    <Compile Include="Database\Meta\CommittedCIZoneInfo.cs" />
+    <Compile Include="Database\Meta\Compare\AttributeValueComparator.cs" />
+    <Compile Include="Database\Meta\Compare\ChangedObjectInfo.cs" />
+    <Compile Include="Database\Meta\Compare\IObjectInfoComparator.cs" />
+    <Compile Include="Database\Meta\Compare\ObjectInfoComparator.cs" />
+    <Compile Include="Database\Meta\EnumNativeObjectInfo.cs" />
+    <Compile Include="Database\Meta\IClassInfoProvider.cs" />
+    <Compile Include="Database\Meta\IDTypes.cs" />
+    <Compile Include="Database\Meta\IMetaModel.cs" />
+    <Compile Include="Database\Meta\Introspector\ClassIntrospector.cs" />
+    <Compile Include="Database\Meta\Introspector\DefaultInstrumentationCallback.cs" />
+    <Compile Include="Database\Meta\Introspector\IIntrospectionCallback.cs" />
+    <Compile Include="Database\Meta\Introspector\IObjectIntrospectionDataProvider.cs" />
+    <Compile Include="Database\Meta\Introspector\IObjectIntrospector.cs" />
+    <Compile Include="Database\Meta\Introspector\ObjectIntrospector.cs" />
+    <Compile Include="Database\Meta\MetaModel.cs" />
+    <Compile Include="Database\Meta\MetaModelCompabilityChecker.cs" />
+    <Compile Include="Database\Meta\NativeAttributeHeader.cs" />
+    <Compile Include="Database\Meta\NativeObjectInfo.cs" />
+    <Compile Include="Database\Meta\NonNativeDeletedObjectInfo.cs" />
+    <Compile Include="Database\Meta\NonNativeNullObjectInfo.cs" />
+    <Compile Include="Database\Meta\NonNativeObjectInfo.cs" />
+    <Compile Include="Database\Meta\NullNativeObjectInfo.cs" />
+    <Compile Include="Database\Meta\ObjectInfoHeader.cs" />
+    <Compile Include="Database\Meta\ObjectReference.cs" />
+    <Compile Include="Database\Meta\OdbClassNameResolver.cs" />
+    <Compile Include="Database\Meta\ODBType.cs" />
+    <Compile Include="Database\Meta\OidInfo.cs" />
+    <Compile Include="Database\Meta\StorageEngineConstant.cs" />
+    <Compile Include="Database\Odb.cs" />
+    <Compile Include="Database\OdbExt.cs" />
+    <Compile Include="Database\OdbFactory.cs" />
+    <Compile Include="Database\OIDFactory.cs" />
+    <Compile Include="Database\Oid\BaseOID.cs" />
+    <Compile Include="Database\Oid\ClassOID.cs" />
+    <Compile Include="Database\Oid\DatabaseId.cs" />
+    <Compile Include="Database\Oid\ExternalObjectOID.cs" />
+    <Compile Include="Database\Oid\IIdManager.cs" />
+    <Compile Include="Database\Oid\ObjectOID.cs" />
+    <Compile Include="Database\Reflection\ByteBuffer.cs" />
+    <Compile Include="Database\Reflection\ILPattern.cs" />
+    <Compile Include="Database\Reflection\Instruction.cs" />
+    <Compile Include="Database\Reflection\MatchContext.cs" />
+    <Compile Include="Database\Reflection\MethodBodyReader.cs" />
+    <Compile Include="Database\Services\ICommitListener.cs" />
+    <Compile Include="Database\Services\IMetaModelCompabilityChecker.cs" />
+    <Compile Include="Database\Services\IMetaModelService.cs" />
+    <Compile Include="Database\Services\IReflectionService.cs" />
+    <Compile Include="Database\Services\ReflectionService.cs" />
+    <Compile Include="Database\Storage\BlockStatus.cs" />
+    <Compile Include="Database\Storage\BlockTypes.cs" />
+    <Compile Include="Database\Storage\CurrentIdBlockInfo.cs" />
+    <Compile Include="Database\Storage\IdInfo.cs" />
+    <Compile Include="Database\Storage\IDStatus.cs" />
+    <Compile Include="Database\Tool\DictionaryExtensions.cs" />
+    <Compile Include="Database\Tool\DLogger.cs" />
+    <Compile Include="Database\Tool\ListExtensions.cs" />
+    <Compile Include="Database\Tool\UniqueIdGenerator.cs" />
+    <Compile Include="Database\Tool\Wrappers\IOdbList.cs" />
+    <Compile Include="Database\Tool\Wrappers\OdbHashMap2.cs" />
+    <Compile Include="Database\Tool\Wrappers\OdbList.cs" />
+    <Compile Include="Database\Tool\Wrappers\OdbRandom.cs" />
+    <Compile Include="Database\Tool\Wrappers\OdbString.cs" />
+    <Compile Include="Database\Tool\Wrappers\OdbTime.cs" />
+    <Compile Include="Database\Transaction\LocalSession.cs" />
+    <Compile Include="Database\Transaction\OdbTransaction.cs" />
+    <Compile Include="Database\Transaction\Session.cs" />
+    <Compile Include="Database\Transaction\WriteAction.cs" />
+    <Compile Include="Database\Triggers\IInternalTriggerManager.cs" />
+    <Compile Include="Database\Triggers\InstrumentationCallbackForStore.cs" />
+    <Compile Include="Database\Triggers\ITriggersEngine.cs" />
+    <Compile Include="Database\Triggers\ObjectRepresentation.cs" />
+    <Compile Include="Database\Triggers\TriggerManager.cs" />
+    <Compile Include="Database\TypeResolution\CachedTypeResolver.cs" />
+    <Compile Include="Database\TypeResolution\GenericArgumentsHolder.cs" />
+    <Compile Include="Database\TypeResolution\GenericTypeResolver.cs" />
+    <Compile Include="Database\TypeResolution\ITypeResolver.cs" />
+    <Compile Include="Database\TypeResolution\TypeAssemblyHolder.cs" />
+    <Compile Include="Database\TypeResolution\TypeRegistry.cs" />
+    <Compile Include="Database\TypeResolution\TypeResolutionUtils.cs" />
+    <Compile Include="Database\TypeResolution\TypeResolver.cs" />
+    <Compile Include="FilterBuilder\FilterBuilder.cs" />
+    <Compile Include="FilterBuilder\FilterGroup.cs" />
+    <Compile Include="FilterBuilder\Helpers.cs" />
+    <Compile Include="FilterBuilder\SystemFileType.cs" />
+    <Compile Include="HSLColor.cs" />
+    <Compile Include="I18N\BaseCatalog.cs" />
+    <Compile Include="I18N\Catalog.cs" />
+    <Compile Include="I18N\ICatalog.cs" />
+    <Compile Include="I18N\Loaders\MoFileParser.cs" />
+    <Compile Include="I18N\Plural\PluralFormProcessor.cs" />
+    <Compile Include="ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instance.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="ProgressCursor\CursorHelper.cs" />
+    <Compile Include="ProgressCursor\IconInfo.cs" />
+    <Compile Include="ProgressCursor\IProgressCursor.cs" />
+    <Compile Include="ProgressCursor\ProgressCursor.cs" />
+    <Compile Include="ProgressCursor\UnManagedMethodWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuickMouse\QuickMouseMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickMouse\QuickMouseMenu.designer.cs">
+      <DependentUpon>QuickMouseMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickMouse\QuickMouseMenuItem.cs" />
+    <Compile Include="Splasher.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringStream.cs" />
+    <Compile Include="SyntaxRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TempFile.cs" />
+    <Compile Include="UndoRedo\Change.cs" />
+    <Compile Include="UndoRedo\Collections\Generic\UndoRedoDictionary.cs" />
+    <Compile Include="UndoRedo\Collections\Generic\UndoRedoList.cs" />
+    <Compile Include="UndoRedo\Command.cs" />
+    <Compile Include="UndoRedo\Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UndoRedo\Component1.designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UndoRedo\Events.cs" />
+    <Compile Include="UndoRedo\IUndoRedoMember.cs" />
+    <Compile Include="UndoRedo\Log.cs" />
+    <Compile Include="UndoRedo\UndoRedoArea.cs" />
+    <Compile Include="UndoRedo\UndoRedoManager.cs" />
+    <Compile Include="UndoRedo\UndoRedoProperty.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database\Meta\ODBType.cs.orig" />
+    <None Include="Database\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoCompleteMenu\AutocompleteMenu.resx">
+      <DependentUpon>AutocompleteMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumButtonGroup\EnumButtonGroup.resx">
+      <DependentUpon>EnumButtonGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickMouse\QuickMouseMenu.resx">
+      <DependentUpon>QuickMouseMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenu32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
