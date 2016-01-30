@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlugInManager.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +242,10 @@
     <None Include="Resources\GIMP-Toolbox-TransformShear-Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Paint.Contracts\Paint.Contracts.csproj">
+      <Project>{85766b07-182d-4e31-8ddb-2c4921b5e9c9}</Project>
+      <Name>Paint.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Paint.Core\Paint.Core.csproj">
       <Project>{247028D0-DADC-4861-84BA-5AE74955B791}</Project>
       <Name>Paint.Core</Name>

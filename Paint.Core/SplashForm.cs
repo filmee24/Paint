@@ -85,50 +85,51 @@ namespace AppLoadingMT
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(SplashForm));
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.lStatusInfo = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Bitmap)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(300, 200);
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			// 
-			// lStatusInfo
-			// 
-			this.lStatusInfo.Location = new System.Drawing.Point(56, 200);
-			this.lStatusInfo.Name = "lStatusInfo";
-			this.lStatusInfo.Size = new System.Drawing.Size(240, 16);
-			this.lStatusInfo.TabIndex = 1;
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(0, 200);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(48, 16);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Status:";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// SplashForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(300, 220);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.label2,
-																		  this.lStatusInfo,
-																		  this.pictureBox1});
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Name = "SplashForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "SplashForm";
-			this.ResumeLayout(false);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lStatusInfo = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Paint.Core.Properties.Resources.SplashImage;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lStatusInfo
+            // 
+            this.lStatusInfo.Location = new System.Drawing.Point(56, 200);
+            this.lStatusInfo.Name = "lStatusInfo";
+            this.lStatusInfo.Size = new System.Drawing.Size(240, 16);
+            this.lStatusInfo.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(0, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Status:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // SplashForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(300, 220);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lStatusInfo);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SplashForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SplashForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

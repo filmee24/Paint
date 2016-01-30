@@ -5,6 +5,10 @@ namespace Paint.Core
 {
     public class ImageButton : PictureBox
     {
+        public string ToolTipText { get; set; }
+
+        private ToolTip _tooltip = new ToolTip();
+
         public ImageButton()
         {
             SizeMode = PictureBoxSizeMode.Zoom;
@@ -14,12 +18,17 @@ namespace Paint.Core
 
         protected override void OnMouseHover(EventArgs e)
         {
-            this.BorderStyle = BorderStyle.FixedSingle;
+            BorderStyle = BorderStyle.FixedSingle;
+
+            if (ToolTipText != null)
+            {
+                _tooltip.Show(ToolTipText, this);
+            }
         }
 
         protected override void OnMouseLeave(EventArgs e)
         {
-            this.BorderStyle = BorderStyle.None;
+            BorderStyle = BorderStyle.None;
         }
     }
 }

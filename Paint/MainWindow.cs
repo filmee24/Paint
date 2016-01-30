@@ -21,7 +21,7 @@ namespace Paint
 
             ThemeResolutionService.ApplicationThemeName = this.ThemeName;
 
-            pictureBox1.MouseClick += (s, e) =>
+            /*pictureBox1.MouseClick += (s, e) =>
             {
                 var qm = new QuickMouseMenu();
 
@@ -39,6 +39,7 @@ namespace Paint
 
                 qm.ShowMenu(e.Location);
             };
+            */
         }
 
         internal void OpenImage(string v)

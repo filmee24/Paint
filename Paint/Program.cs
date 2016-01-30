@@ -1,6 +1,9 @@
 ﻿using AppLoadingMT;
 using Microsoft.VisualBasic.ApplicationServices;
+using Paint.Core;
 using System;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Paint
 {
@@ -16,9 +19,21 @@ namespace Paint
 
         static void DoStartup(string[] args)
         {
-            //	do whatever you need to do
             SingleInstanceController controller = new SingleInstanceController();
             controller.Run(args);
+
+            ServiceLocator.Add(new PlugInManager());
+            var pm = ServiceLocator.Get<PlugInManager>();
+
+            pm.PlugInFolder = Application.StartupPath + "\\" + "Plugins";
+            if(Directory.Exists(pm.PlugInFolder))
+            {
+                pm.LoadPlugIns();
+            }
+            else
+            {
+                Directory.CreateDirectory(pm.PlugInFolder);
+            }
 
             Splasher.Status = "Loading...";
         }

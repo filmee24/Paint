@@ -3,3 +3,17 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photo
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.dll
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.pdb
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Plugin.Photoshop.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Plugin.Photoshop.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Contracts.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Core.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Telerik.WinControls.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\TelerikCommon.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Contracts.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Paint.Core.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\bin\Debug\Telerik.WinControls.xml
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Plugin.Photoshop\obj\Debug\Paint.Plugin.Photoshop.pdb

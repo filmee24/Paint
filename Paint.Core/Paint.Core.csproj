@@ -427,6 +427,7 @@
       <DependentUpon>QuickMouseMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="QuickMouse\QuickMouseMenuItem.cs" />
+    <Compile Include="ServiceLocator.cs" />
     <Compile Include="Splasher.cs" />
     <Compile Include="SplashForm.cs">
       <SubType>Form</SubType>
@@ -483,6 +484,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AppMenu32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
