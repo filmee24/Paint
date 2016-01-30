@@ -4,6 +4,6 @@ namespace Paint.Contracts
 {
     public interface IPaintPlugIn : IPlugIn
     {
-        
+        IFileType[] FileTypes { get; }
     }
 }

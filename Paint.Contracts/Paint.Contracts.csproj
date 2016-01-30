@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IFileType.cs" />
     <Compile Include="IPaintApplication.cs" />
     <Compile Include="IPaintPlugIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

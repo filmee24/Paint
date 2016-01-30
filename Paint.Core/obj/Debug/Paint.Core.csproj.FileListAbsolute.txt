@@ -31,3 +31,4 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\o
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.csproj.GenerateResource.Cache
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.dll
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.csprojResolveAssemblyReference.cache
