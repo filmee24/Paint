@@ -9,3 +9,4 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\Paint
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\Paint\bin\Debug\Addins\TestAddin\TestAddin.pdb
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.dll
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.csprojResolveAssemblyReference.cache

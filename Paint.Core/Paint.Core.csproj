@@ -83,8 +83,10 @@
     <Compile Include="AutoCompleteMenu\Range.cs" />
     <Compile Include="AutoCompleteMenu\TextBoxWrapper.cs" />
     <Compile Include="CommandlineArguments.cs" />
+    <Compile Include="Commands\ReturnableCommand.cs" />
     <Compile Include="DialogBuilder.cs" />
     <Compile Include="Doozer\ToolDoozer.cs" />
+    <Compile Include="Doozer\WindowDoozer.cs" />
     <Compile Include="EnumButtonGroup\EnumButtonGroup.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -400,6 +402,7 @@
     </Compile>
     <Compile Include="Instance.cs" />
     <Compile Include="Keyboard.cs" />
+    <Compile Include="Models\Window.cs" />
     <Compile Include="MozOptions\EtchedLine.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -456,7 +459,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TempFile.cs" />
-    <Compile Include="Tool.cs" />
+    <Compile Include="Models\Tool.cs" />
     <Compile Include="UndoRedo\Change.cs" />
     <Compile Include="UndoRedo\Collections\Generic\UndoRedoDictionary.cs" />
     <Compile Include="UndoRedo\Collections\Generic\UndoRedoList.cs" />

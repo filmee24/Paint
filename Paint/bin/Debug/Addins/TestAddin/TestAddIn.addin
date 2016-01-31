@@ -28,4 +28,7 @@
 	<Path name="/Workspace/Tools">
 		<Tool tooltiptext="Hello From Addin" class="TestAddin.ToolCommand" />
 	</Path>
+	<Path name="/Workspace/Windows">
+		<Window title="Addin" position="Bottom" class="TestAddin.AddinWindow" />
+	</Path>
 </AddIn>

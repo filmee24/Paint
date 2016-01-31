@@ -7,6 +7,8 @@ using AppLoadingMT;
 using ICSharpCode.Core;
 using Base;
 using Paint.Core.Doozer;
+using Paint.Core.Models;
+using Telerik.WinControls.UI.Docking;
 
 namespace Paint
 {
@@ -44,6 +46,7 @@ namespace Paint
             saveFileDialog1.Filter = Utils.GetFileFilter("/Workspace/FileFilter");
 
             AddInTree.Doozers.Add("Tool", new ToolDoozer());
+            AddInTree.Doozers.Add("Window", new WindowDoozer());
 
             // Add Tools to ToolBox
             foreach (var tool in AddInTree.BuildItems<Tool>("/Workspace/Tools", this, false))
@@ -52,8 +55,18 @@ namespace Paint
                 ib.ToolTipText = tool.ToolTipText;
                 ib.Image = ib.Image;
                 ib.Click += (s, e) => tool.Command.Run();
-
+                
                 toolsLayout.Controls.Add(ib);
+            }
+
+            foreach (var window in AddInTree.BuildItems<Window>("/Workspace/Windows", this, false))
+            {
+                var w = new ToolWindow(window.Title);
+                window.ContainerControl.Dock = DockStyle.Fill;
+
+                w.Controls.Add(window.ContainerControl);
+
+                dock.AddDocument(w, (DockPosition)Enum.Parse(typeof(DockPosition), window.DockPosition));
             }
 
             //var menu = new MenuStrip();
