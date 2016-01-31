@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.Core">
+      <HintPath>..\..\..\..\..\..\Downloads\Using_the_SharpDevelop_core_library_2\TestProjekt\bin\ICSharpCode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\..\Downloads\Using_the_SharpDevelop_core_library_2\TestProjekt\bin\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -78,6 +84,7 @@
     <Compile Include="AutoCompleteMenu\TextBoxWrapper.cs" />
     <Compile Include="CommandlineArguments.cs" />
     <Compile Include="DialogBuilder.cs" />
+    <Compile Include="Doozer\ToolDoozer.cs" />
     <Compile Include="EnumButtonGroup\EnumButtonGroup.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -449,6 +456,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TempFile.cs" />
+    <Compile Include="Tool.cs" />
     <Compile Include="UndoRedo\Change.cs" />
     <Compile Include="UndoRedo\Collections\Generic\UndoRedoDictionary.cs" />
     <Compile Include="UndoRedo\Collections\Generic\UndoRedoList.cs" />

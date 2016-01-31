@@ -33,8 +33,12 @@ namespace Paint
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
             this.dock = new Telerik.WinControls.UI.Docking.RadDock();
+            this.layersWindow = new Telerik.WinControls.UI.Docking.ToolWindow();
+            this.layersList = new Telerik.WinControls.UI.RadListControl();
+            this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
+            this.toolTabStrip8 = new Telerik.WinControls.UI.Docking.ToolTabStrip();
             this.toolWindow = new Telerik.WinControls.UI.Docking.ToolWindow();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.toolsLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.pencilToolButton = new Paint.Core.ImageButton();
             this.textToolButton = new Paint.Core.ImageButton();
             this.moveToolButton = new Paint.Core.ImageButton();
@@ -51,14 +55,10 @@ namespace Paint
             this.switchColorsBtn = new System.Windows.Forms.PictureBox();
             this.secondColorPreviewBtn = new System.Windows.Forms.PictureBox();
             this.defaultColorsBtn = new System.Windows.Forms.PictureBox();
-            this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
-            this.toolTabStrip8 = new Telerik.WinControls.UI.Docking.ToolTabStrip();
             this.toolTabStrip9 = new Telerik.WinControls.UI.Docking.ToolTabStrip();
             this.settingsWindow = new Telerik.WinControls.UI.Docking.ToolWindow();
             this.documentContainer1 = new Telerik.WinControls.UI.Docking.DocumentContainer();
             this.toolTabStrip7 = new Telerik.WinControls.UI.Docking.ToolTabStrip();
-            this.layersWindow = new Telerik.WinControls.UI.Docking.ToolWindow();
-            this.layersList = new Telerik.WinControls.UI.RadListControl();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.fileMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.newMenuItem = new Telerik.WinControls.UI.RadMenuItem();
@@ -77,12 +77,18 @@ namespace Paint
             this.dockWindowPlaceholder2 = new Telerik.WinControls.UI.Docking.DockWindowPlaceholder();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.radMenu1 = new RadMenu();
+            this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radColorDialog1 = new Telerik.WinControls.RadColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dock)).BeginInit();
             this.dock.SuspendLayout();
+            this.layersWindow.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layersList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
+            this.radSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip8)).BeginInit();
+            this.toolTabStrip8.SuspendLayout();
             this.toolWindow.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.toolsLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pencilToolButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textToolButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveToolButton)).BeginInit();
@@ -101,17 +107,11 @@ namespace Paint
             ((System.ComponentModel.ISupportInitialize)(this.switchColorsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondColorPreviewBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultColorsBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
-            this.radSplitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip8)).BeginInit();
-            this.toolTabStrip8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip9)).BeginInit();
             this.toolTabStrip9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentContainer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip7)).BeginInit();
             this.toolTabStrip7.SuspendLayout();
-            this.layersWindow.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layersList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip3)).BeginInit();
@@ -140,10 +140,72 @@ namespace Paint
             this.dock.Text = "radDock1";
             this.dock.ThemeName = "Windows8";
             // 
+            // layersWindow
+            // 
+            this.layersWindow.Caption = null;
+            this.layersWindow.Controls.Add(this.layersList);
+            this.layersWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.layersWindow.Location = new System.Drawing.Point(4, 27);
+            this.layersWindow.Name = "layersWindow";
+            this.layersWindow.PreviousDockState = Telerik.WinControls.UI.Docking.DockState.Docked;
+            this.layersWindow.Size = new System.Drawing.Size(192, 363);
+            this.layersWindow.Text = "Ebenen";
+            // 
+            // layersList
+            // 
+            this.layersList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layersList.Location = new System.Drawing.Point(0, 0);
+            this.layersList.Name = "layersList";
+            this.layersList.Size = new System.Drawing.Size(192, 363);
+            this.layersList.TabIndex = 0;
+            this.layersList.ThemeName = "Windows8";
+            // 
+            // radSplitContainer1
+            // 
+            this.radSplitContainer1.CausesValidation = false;
+            this.radSplitContainer1.Controls.Add(this.toolTabStrip8);
+            this.radSplitContainer1.Controls.Add(this.toolTabStrip9);
+            this.radSplitContainer1.IsCleanUpTarget = true;
+            this.radSplitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.radSplitContainer1.Name = "radSplitContainer1";
+            this.radSplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.radSplitContainer1.Padding = new System.Windows.Forms.Padding(5);
+            // 
+            // 
+            // 
+            this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(0, 0);
+            this.radSplitContainer1.Size = new System.Drawing.Size(186, 394);
+            this.radSplitContainer1.SizeInfo.AbsoluteSize = new System.Drawing.Size(186, 200);
+            this.radSplitContainer1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-14, 0);
+            this.radSplitContainer1.SplitterWidth = 2;
+            this.radSplitContainer1.TabIndex = 7;
+            this.radSplitContainer1.TabStop = false;
+            this.radSplitContainer1.ThemeName = "Windows8";
+            // 
+            // toolTabStrip8
+            // 
+            this.toolTabStrip8.CanUpdateChildIndex = true;
+            this.toolTabStrip8.CausesValidation = false;
+            this.toolTabStrip8.Controls.Add(this.toolWindow);
+            this.toolTabStrip8.Location = new System.Drawing.Point(0, 0);
+            this.toolTabStrip8.Name = "toolTabStrip8";
+            // 
+            // 
+            // 
+            this.toolTabStrip8.RootElement.MinSize = new System.Drawing.Size(0, 0);
+            this.toolTabStrip8.SelectedIndex = 0;
+            this.toolTabStrip8.Size = new System.Drawing.Size(186, 210);
+            this.toolTabStrip8.SizeInfo.AbsoluteSize = new System.Drawing.Size(186, 200);
+            this.toolTabStrip8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.03508772F);
+            this.toolTabStrip8.SizeInfo.SplitterCorrection = new System.Drawing.Size(-14, 12);
+            this.toolTabStrip8.TabIndex = 4;
+            this.toolTabStrip8.TabStop = false;
+            this.toolTabStrip8.ThemeName = "Windows8";
+            // 
             // toolWindow
             // 
             this.toolWindow.Caption = null;
-            this.toolWindow.Controls.Add(this.flowLayoutPanel1);
+            this.toolWindow.Controls.Add(this.toolsLayout);
             this.toolWindow.Controls.Add(this.radPanel1);
             this.toolWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.toolWindow.Location = new System.Drawing.Point(4, 27);
@@ -152,24 +214,24 @@ namespace Paint
             this.toolWindow.Size = new System.Drawing.Size(178, 179);
             this.toolWindow.Text = "Werkzeuge";
             // 
-            // flowLayoutPanel1
+            // toolsLayout
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.pencilToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.textToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.moveToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.mirrorToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.perspektiveToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.brushToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.anchorToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.rotateToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.resizeToolButton);
-            this.flowLayoutPanel1.Controls.Add(this.magicSelectorToolButton);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 106);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.toolsLayout.AutoScroll = true;
+            this.toolsLayout.Controls.Add(this.pencilToolButton);
+            this.toolsLayout.Controls.Add(this.textToolButton);
+            this.toolsLayout.Controls.Add(this.moveToolButton);
+            this.toolsLayout.Controls.Add(this.mirrorToolButton);
+            this.toolsLayout.Controls.Add(this.perspektiveToolButton);
+            this.toolsLayout.Controls.Add(this.brushToolButton);
+            this.toolsLayout.Controls.Add(this.anchorToolButton);
+            this.toolsLayout.Controls.Add(this.rotateToolButton);
+            this.toolsLayout.Controls.Add(this.resizeToolButton);
+            this.toolsLayout.Controls.Add(this.magicSelectorToolButton);
+            this.toolsLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolsLayout.Location = new System.Drawing.Point(0, 0);
+            this.toolsLayout.Name = "toolsLayout";
+            this.toolsLayout.Size = new System.Drawing.Size(178, 106);
+            this.toolsLayout.TabIndex = 2;
             // 
             // pencilToolButton
             // 
@@ -366,48 +428,6 @@ namespace Paint
             this.defaultColorsBtn.TabStop = false;
             this.defaultColorsBtn.Click += new System.EventHandler(this.defaultColorsBtn_Click);
             // 
-            // radSplitContainer1
-            // 
-            this.radSplitContainer1.CausesValidation = false;
-            this.radSplitContainer1.Controls.Add(this.toolTabStrip8);
-            this.radSplitContainer1.Controls.Add(this.toolTabStrip9);
-            this.radSplitContainer1.IsCleanUpTarget = true;
-            this.radSplitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.radSplitContainer1.Name = "radSplitContainer1";
-            this.radSplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.radSplitContainer1.Padding = new System.Windows.Forms.Padding(5);
-            // 
-            // 
-            // 
-            this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(0, 0);
-            this.radSplitContainer1.Size = new System.Drawing.Size(186, 394);
-            this.radSplitContainer1.SizeInfo.AbsoluteSize = new System.Drawing.Size(186, 200);
-            this.radSplitContainer1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-14, 0);
-            this.radSplitContainer1.SplitterWidth = 2;
-            this.radSplitContainer1.TabIndex = 7;
-            this.radSplitContainer1.TabStop = false;
-            this.radSplitContainer1.ThemeName = "Windows8";
-            // 
-            // toolTabStrip8
-            // 
-            this.toolTabStrip8.CanUpdateChildIndex = true;
-            this.toolTabStrip8.CausesValidation = false;
-            this.toolTabStrip8.Controls.Add(this.toolWindow);
-            this.toolTabStrip8.Location = new System.Drawing.Point(0, 0);
-            this.toolTabStrip8.Name = "toolTabStrip8";
-            // 
-            // 
-            // 
-            this.toolTabStrip8.RootElement.MinSize = new System.Drawing.Size(0, 0);
-            this.toolTabStrip8.SelectedIndex = 0;
-            this.toolTabStrip8.Size = new System.Drawing.Size(186, 210);
-            this.toolTabStrip8.SizeInfo.AbsoluteSize = new System.Drawing.Size(186, 200);
-            this.toolTabStrip8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.03508772F);
-            this.toolTabStrip8.SizeInfo.SplitterCorrection = new System.Drawing.Size(-14, 12);
-            this.toolTabStrip8.TabIndex = 4;
-            this.toolTabStrip8.TabStop = false;
-            this.toolTabStrip8.ThemeName = "Windows8";
-            // 
             // toolTabStrip9
             // 
             this.toolTabStrip9.CanUpdateChildIndex = true;
@@ -463,26 +483,6 @@ namespace Paint
             this.toolTabStrip7.TabIndex = 3;
             this.toolTabStrip7.TabStop = false;
             this.toolTabStrip7.ThemeName = "Windows8";
-            // 
-            // layersWindow
-            // 
-            this.layersWindow.Caption = null;
-            this.layersWindow.Controls.Add(this.layersList);
-            this.layersWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.layersWindow.Location = new System.Drawing.Point(4, 27);
-            this.layersWindow.Name = "layersWindow";
-            this.layersWindow.PreviousDockState = Telerik.WinControls.UI.Docking.DockState.Docked;
-            this.layersWindow.Size = new System.Drawing.Size(192, 363);
-            this.layersWindow.Text = "Ebenen";
-            // 
-            // layersList
-            // 
-            this.layersList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layersList.Location = new System.Drawing.Point(0, 0);
-            this.layersList.Name = "layersList";
-            this.layersList.Size = new System.Drawing.Size(192, 363);
-            this.layersList.TabIndex = 0;
-            this.layersList.ThemeName = "Windows8";
             // 
             // fileMenuItem
             // 
@@ -628,7 +628,7 @@ namespace Paint
             // 
             // radMenu1
             // 
-            this.radMenu1.Items.AddRange(new RadMenuItem[] {
+            this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.fileMenuItem,
             this.radMenuItem2,
             this.radMenuItem3,
@@ -666,8 +666,14 @@ namespace Paint
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Workbench_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dock)).EndInit();
             this.dock.ResumeLayout(false);
+            this.layersWindow.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layersList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();
+            this.radSplitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip8)).EndInit();
+            this.toolTabStrip8.ResumeLayout(false);
             this.toolWindow.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.toolsLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pencilToolButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textToolButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveToolButton)).EndInit();
@@ -686,17 +692,11 @@ namespace Paint
             ((System.ComponentModel.ISupportInitialize)(this.switchColorsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondColorPreviewBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultColorsBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();
-            this.radSplitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip8)).EndInit();
-            this.toolTabStrip8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip9)).EndInit();
             this.toolTabStrip9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.documentContainer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip7)).EndInit();
             this.toolTabStrip7.ResumeLayout(false);
-            this.layersWindow.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layersList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolTabStrip3)).EndInit();
@@ -738,7 +738,7 @@ namespace Paint
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private System.Windows.Forms.PictureBox firstColorPreviewBtn;
         private System.Windows.Forms.PictureBox secondColorPreviewBtn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel toolsLayout;
         private Core.ImageButton pencilToolButton;
         private System.Windows.Forms.PictureBox defaultColorsBtn;
         private Core.ImageButton textToolButton;

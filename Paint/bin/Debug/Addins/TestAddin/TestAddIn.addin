@@ -21,8 +21,11 @@
 							label="Click me"
 							insertbefore="Quit" />
 	</Path>
-	<Path name = "/Workspace/FileFilter">
+	<Path name="/Workspace/FileFilter">
 		<FileFilter id = "Text" name = "Text files" extensions = "*.txt"/>
 		<FileFilter id = "LogFiles" name = "Log files" extensions = "*.log"/>
+	</Path>
+	<Path name="/Workspace/Tools">
+		<Tool tooltiptext="Hello From Addin" class="TestAddin.ToolCommand" />
 	</Path>
 </AddIn>

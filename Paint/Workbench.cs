@@ -6,6 +6,7 @@ using System;
 using AppLoadingMT;
 using ICSharpCode.Core;
 using Base;
+using Paint.Core.Doozer;
 
 namespace Paint
 {
@@ -41,6 +42,19 @@ namespace Paint
 
             openFileDialog1.Filter = Utils.GetFileFilter("/Workspace/FileFilter");
             saveFileDialog1.Filter = Utils.GetFileFilter("/Workspace/FileFilter");
+
+            AddInTree.Doozers.Add("Tool", new ToolDoozer());
+
+            // Add Tools to ToolBox
+            foreach (var tool in AddInTree.BuildItems<Tool>("/Workspace/Tools", this, false))
+            {
+                var ib = new ImageButton();
+                ib.ToolTipText = tool.ToolTipText;
+                ib.Image = ib.Image;
+                ib.Click += (s, e) => tool.Command.Run();
+
+                toolsLayout.Controls.Add(ib);
+            }
 
             //var menu = new MenuStrip();
             //MenuService.AddItemsToMenu(menu.Items, this, "/Workbench/MainMenu");

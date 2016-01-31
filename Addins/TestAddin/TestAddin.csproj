@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestItem.cs" />
+    <Compile Include="ToolCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TestAddIn.addin">

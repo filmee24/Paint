@@ -39,3 +39,7 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\o
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.PropertyPage.resources
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.ScrollableControlWithScrollEvents.resources
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\bin\Debug\ICSharpCode.Core.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\bin\Debug\log4net.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\bin\Debug\ICSharpCode.Core.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\bin\Debug\ICSharpCode.Core.xml
