@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -44,21 +45,17 @@
   <ItemGroup>
     <Compile Include="FileType.cs" />
     <Compile Include="Plugin.cs" />
-    <Compile Include="BinaryReverseReader.cs" />
-    <Compile Include="ImageDecoderBitmaps.cs" />
-    <Compile Include="ImageResource.cs" />
-    <Compile Include="ImageResources\AlphaChannels.cs" />
-    <Compile Include="ImageResources\ResolutionInfo.cs" />
-    <Compile Include="ImageResources\Thumbnail.cs" />
-    <Compile Include="Layer.cs" />
+    <Compile Include="Internal\BinaryReverseReader.cs" />
+    <Compile Include="Internal\ImageDecoderBitmaps.cs" />
+    <Compile Include="Internal\ImageResource.cs" />
+    <Compile Include="Internal\ImageResources\AlphaChannels.cs" />
+    <Compile Include="Internal\ImageResources\ResolutionInfo.cs" />
+    <Compile Include="Internal\ImageResources\Thumbnail.cs" />
+    <Compile Include="Internal\Layer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PSDFile.cs" />
+    <Compile Include="Internal\PSDFile.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Paint.Contracts\Paint.Contracts.csproj">
-      <Project>{85766b07-182d-4e31-8ddb-2c4921b5e9c9}</Project>
-      <Name>Paint.Contracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Paint.Core\Paint.Core.csproj">
       <Project>{247028d0-dadc-4861-84ba-5ae74955b791}</Project>
       <Name>Paint.Core</Name>

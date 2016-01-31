@@ -1,0 +1,12 @@
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Addins\TestAddin\TestAddIn.addin
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Addins\TestAddin\TestAddin.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Addins\TestAddin\TestAddin.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\TestAddin\obj\Debug\TestAddin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\TestAddin\obj\Debug\TestAddin.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\TestAddin\obj\Debug\TestAddin.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\Paint\bin\Debug\Addins\TestAddin\TestAddIn.addin
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\Paint\bin\Debug\Addins\TestAddin\TestAddin.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\Paint\bin\Debug\Addins\TestAddin\TestAddin.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.dll
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Addins\TestAddin\obj\Debug\TestAddin.pdb

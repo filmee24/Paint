@@ -1,0 +1,24 @@
+﻿<AddIn name="Base" author="Simon Schweiger">
+	<Runtime>
+		<Import assembly="..\Base.dll" />
+	</Runtime>
+	
+	<Manifest>
+		<!-- Damit wir im Programm eine Versionsnummer auslesen können 
+			 und damit AddIns überprüfen können, ob Sie mit dieser Programmversion
+			 kompatibel sind, vergeben wir hier eine eindeutige Identität -->
+		
+		<!-- Das @..\Base.dll bedeutet, dass der SharpDevelop Kern die
+			 Versionsnummer von der angegebenen Bibliothek, in diesem Fall
+			 eben die Base.dll, nehmen soll -->
+		<Identity name="Base" version="@..\Base.dll" />
+	</Manifest>
+	
+	<!-- Die Applikation am Pfad für Menüs erweitern. Dieses Pfad haben wir im
+		 Konstruktor von Workbench.cs selbst angegeben! -->
+	<Path name="/Workbench/MainMenu">
+		<MenuItem id="File" type="Menu" label="Datei">
+			<MenuItem id="Quit" class="Base.MainMenu.QuitMenuCommand" label="Beenden" />
+		</MenuItem>
+	</Path>
+</AddIn>

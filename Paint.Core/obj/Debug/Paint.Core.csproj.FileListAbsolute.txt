@@ -31,4 +31,11 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\o
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.csproj.GenerateResource.Cache
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.dll
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.EtchedLine.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.FirefoxDialog.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.ImageListPanel.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.MozItem.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.MozPane.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.PropertyPage.resources
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Creek.UI.MozOptions.ScrollableControlWithScrollEvents.resources
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint.Core\obj\Debug\Paint.Core.csprojResolveAssemblyReference.cache

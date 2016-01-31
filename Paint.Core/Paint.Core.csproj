@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -85,24 +87,6 @@
     <Compile Include="EnumButtonGroup\EnumButtonGroupSelectedValueEditor.cs" />
     <Compile Include="EnumButtonGroup\StringToTypeConverter.cs" />
     <Compile Include="ExpandoObjectHelper.cs" />
-    <Compile Include="Plugins\ApplicationPlugIn.cs" />
-    <Compile Include="Plugins\Helper.cs" />
-    <Compile Include="Plugins\IApplicationPlugIn.cs" />
-    <Compile Include="Plugins\IPluggable.cs" />
-    <Compile Include="Plugins\IPlugIn.cs" />
-    <Compile Include="Plugins\IPlugInApplication.cs" />
-    <Compile Include="Plugins\IPlugInBasedApplication.cs" />
-    <Compile Include="Plugins\LinkFinder.cs" />
-    <Compile Include="Plugins\LinkItem.cs" />
-    <Compile Include="Plugins\PlugIn.cs" />
-    <Compile Include="Plugins\PlugInApplication.cs" />
-    <Compile Include="Plugins\PlugInApplicationAttribute.cs" />
-    <Compile Include="Plugins\PlugInAttribute.cs" />
-    <Compile Include="Plugins\PlugInBasedApplication.cs" />
-    <Compile Include="Plugins\Runnable\IRunnable.cs" />
-    <Compile Include="Plugins\Runnable\IRunnablePlugIn.cs" />
-    <Compile Include="Plugins\Runnable\RunnablePlugIn.cs" />
-    <Compile Include="Plugins\Runnable\RunnablePlugInBasedApplication.cs" />
     <Compile Include="Database\Api\CascadeDeleteAttribute.cs" />
     <Compile Include="Database\Api\IDatabaseId.cs" />
     <Compile Include="Database\Api\IExternalOID.cs" />
@@ -409,6 +393,34 @@
     </Compile>
     <Compile Include="Instance.cs" />
     <Compile Include="Keyboard.cs" />
+    <Compile Include="MozOptions\EtchedLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MozOptions\FirefoxDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MozOptions\FirefoxDialog.designer.cs">
+      <DependentUpon>FirefoxDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MozOptions\ImageListPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MozOptions\ImageMapEditor.cs" />
+    <Compile Include="MozOptions\MozItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MozOptions\MozPane.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MozOptions\OptionColors.cs" />
+    <Compile Include="MozOptions\PageProp.cs" />
+    <Compile Include="MozOptions\PropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MozOptions\ScrollableControlWithScrollEvents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MozOptions\ThemeManager.cs" />
     <Compile Include="ProgressCursor\CursorHelper.cs" />
     <Compile Include="ProgressCursor\IconInfo.cs" />
     <Compile Include="ProgressCursor\IProgressCursor.cs" />
@@ -467,6 +479,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EnumButtonGroup\EnumButtonGroup.resx">
       <DependentUpon>EnumButtonGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\EtchedLine.resx">
+      <DependentUpon>EtchedLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\FirefoxDialog.resx">
+      <DependentUpon>FirefoxDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\ImageListPanel.resx">
+      <DependentUpon>ImageListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\MozItem.resx">
+      <DependentUpon>MozItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\MozPane.resx">
+      <DependentUpon>MozPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\PropertyPage.resx">
+      <DependentUpon>PropertyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MozOptions\ScrollableControlWithScrollEvents.resx">
+      <DependentUpon>ScrollableControlWithScrollEvents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

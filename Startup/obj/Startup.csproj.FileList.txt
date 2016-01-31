@@ -1,0 +1,7 @@
+../../../bin/AddIns\Base.addin
+../../../bin/data\options\AppProperties.xml
+../../../bin/Startup.exe
+../../../bin/Startup.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Startup.exe
+obj\Debug\Startup.pdb

@@ -42,30 +42,9 @@ namespace AppLoadingMT
 			catch (Exception) 
 			{
 			}
+
 			MySplashThread = null;
 			MySplashForm = null;
-		}
-
-		//	public Method to set or get the loading Status
-		static public string Status 
-		{
-			set 
-			{
-				if (MySplashForm == null) 
-				{
-					return;
-				}
-
-				MySplashForm.StatusInfo = value;
-			}
-			get 
-			{
-				if (MySplashForm == null) 
-				{
-					throw new InvalidOperationException("Splash Form not on screen");
-				}
-				return MySplashForm.StatusInfo;
-			}
 		}
 	}
 }

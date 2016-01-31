@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectGuid>{466A5EF1-0A39-4B59-9C1B-24532D9934AA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Paint</RootNamespace>
+    <AssemblyName>Paint</AssemblyName>
+    <OutputPath>../../../bin/</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="ICSharpCode.Core">
+      <HintPath>..\..\..\..\..\..\Downloads\Using_the_SharpDevelop_core_library_2\TestProjekt\bin\ICSharpCode.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\..\Downloads\Using_the_SharpDevelop_core_library_2\TestProjekt\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddIns\Base.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\options\AppProperties.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MenuCommands.cs" />
+    <Compile Include="SingleInstanceController.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbededdResource Include="ImageResources.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbededdResource>
+    <EmbededdResource Include="StringResources.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbededdResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Paint.Core\Paint.Core.csproj">
+      <Project>{247028d0-dadc-4861-84ba-5ae74955b791}</Project>
+      <Name>Paint.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paint\Base.csproj">
+      <Project>{1b5d4de1-889a-4767-a4f7-4ff5c767ae3b}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>
