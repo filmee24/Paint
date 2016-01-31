@@ -2,23 +2,27 @@
 	<Runtime>
 		<Import assembly="TestAddIn.dll" />
 	</Runtime>
-	
+
 	<!-- Das Datei Menü erweitern -->
-	
+
 	<!-- Wenn wir nochmal in der Datei Base.addin nachsehen, sehen wir,
 		 dass wir in der Definition des Datei Menüs ein Attribut
 		 id="File" angegeben haben. Diese id benützt dass AddIn jetzt,
 		 um das Menü zu erweitern. -->
-	
+
 	<!-- Bei MenuItems können wir mit insertbefore="..." angeben,
 		 wo das MenuItem eingereiht werden soll. Dabei müssen wir
 		 wieder die id des betreffenden MenuItems angeben. Es
- 		 als Gegenstück zum insertbefore="..." auch ein insertafter="..."-->
-	
+		 als Gegenstück zum insertbefore="..." auch ein insertafter="..."-->
+
 	<Path name="/Workbench/MainMenu/File">
-		<MenuItem id="TestMenuItem" 
-		          class="TestAddIn.TestItem"
-		          label="Click me" 
-		          insertbefore="Quit" />
+		<MenuItem id="TestMenuItem"
+							class="TestAddIn.TestItem"
+							label="Click me"
+							insertbefore="Quit" />
+	</Path>
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "Text" name = "Text files" extensions = "*.txt"/>
+		<FileFilter id = "LogFiles" name = "Log files" extensions = "*.log"/>
 	</Path>
 </AddIn>

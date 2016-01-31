@@ -5,6 +5,7 @@ using Telerik.WinControls.UI;
 using System;
 using AppLoadingMT;
 using ICSharpCode.Core;
+using Base;
 
 namespace Paint
 {
@@ -37,6 +38,9 @@ namespace Paint
             radColorDialog1.ColorDialogForm.AllowColorPickFromScreen = false;
 
             ThemeResolutionService.ApplicationThemeName = ThemeName;
+
+            openFileDialog1.Filter = Utils.GetFileFilter("/Workspace/FileFilter");
+            saveFileDialog1.Filter = Utils.GetFileFilter("/Workspace/FileFilter");
 
             //var menu = new MenuStrip();
             //MenuService.AddItemsToMenu(menu.Items, this, "/Workbench/MainMenu");

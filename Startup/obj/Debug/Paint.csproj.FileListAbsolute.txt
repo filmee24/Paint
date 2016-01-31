@@ -6,3 +6,8 @@ C:\Users\filmee24\Documents\Visual Studio 2015\Projects\bin\Paint.pdb
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Startup\obj\Debug\Paint.csprojResolveAssemblyReference.cache
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Startup\obj\Debug\Paint.exe
 C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Startup\obj\Debug\Paint.pdb
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Paint.exe.config
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\AddIns\Base.addin
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\data\options\AppProperties.xml
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Paint.exe
+C:\Users\filmee24\Documents\Visual Studio 2015\Projects\Paint\Paint\Paint\bin\Debug\Paint.pdb
