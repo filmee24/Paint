@@ -66,7 +66,7 @@ namespace Paint
 
                 w.Controls.Add(window.ContainerControl);
 
-                dock.AddDocument(w, (DockPosition)Enum.Parse(typeof(DockPosition), window.DockPosition));
+                dock.DockWindow(w, (DockPosition)Enum.Parse(typeof(DockPosition), window.DockPosition));
             }
 
             //var menu = new MenuStrip();
