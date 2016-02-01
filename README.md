@@ -1,1 +1,1 @@
-# Paintg
+# Paint
