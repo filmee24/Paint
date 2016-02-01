@@ -1,1 +1,3 @@
 replace Menu with MenuStrip
+
+fix exit bug
